@@ -23,6 +23,7 @@ function SetMinterRole(address _minter) public {}
 
 After calling this function address _minter will become a minter.
 
+***
 - Now if any buyer wants to buy a **off chain** NFT , Buyer have to call this function along with price value of the NFT
 
 ```
@@ -37,6 +38,7 @@ NOTE : This function is payable function, buyer have to provide the NFT price va
 
 first ,this function will verify the signature , price , minter (creator) role. Then it will mint the NFT to the NFT creator address and after that it will transfer the NFT to buyer. At the end it will send the NFT price value to the NFT creator (signer).
 
+***
 - If any one holds some NFT **On Chain** any wants to sell the NFT.
 
 The NFT holder have to approve the NFT token Id to this contract address , by calling this function
@@ -53,6 +55,8 @@ After approving this contract and seller have to fixed the selling price and sig
 
 selling of a NFT is totally off chain .
 
+***
+
 - If anyone wants to buy a NFT which is already **On chain**. Then buyer have to call this function with the NFT details and the signature (provided by NFT seller) along with NFT selling price value
 
 ```
@@ -67,6 +71,7 @@ NOTE :- This is a payable function , buyer have send ether amount along with fun
 
 After verifying all the details, this func will transfer the NFT to the buyer and the price value will be send to NFT seller address.
 
+***
 - Events
 1. 
 ```
