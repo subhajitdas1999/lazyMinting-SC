@@ -53,17 +53,16 @@ describe("MyLazyMinting contract", () => {
     );
     const NFTPackage = {
       tokenId: tokenId,
-      price: 20,
+      price: "20",
       tokenURI: "sample-token-uri",
     };
 
     // Become a minter in the NFT contract
-    await myLazyMinting.connect(minter).SetMinterRole();
+    await myLazyMinting.SetMinterRole(minter.address);
 
     const lazyMint = new LazyMint(myLazyMinting.address, minter);
     //sign the NFT from minter
     const signature = await lazyMint.getSignature(NFTPackage);
-
     //NFT creator balance before anyone claim the NFT onchain
     const creatorBalanceBefore = await provider.getBalance(minter.address);
 
@@ -115,7 +114,7 @@ describe("MyLazyMinting contract", () => {
     //step 1 : create a sig and become a minter
 
     // Become a minter in the NFT contract
-    await myLazyMinting.connect(minter).SetMinterRole();
+    await myLazyMinting.SetMinterRole(minter.address);
 
     //sign the NFT and get the signature
     const { NFTPackage, signature } = await createNFTAndGetSig();
@@ -138,7 +137,7 @@ describe("MyLazyMinting contract", () => {
 
   it("Should able to buy an Onchain NFT", async () => {
     // Become a minter in the NFT contract
-    await myLazyMinting.connect(minter).SetMinterRole();
+    await myLazyMinting.SetMinterRole(minter.address);
 
     //sign the NFT and get the signature
     const { NFTPackage, signature } = await createNFTAndGetSig();
