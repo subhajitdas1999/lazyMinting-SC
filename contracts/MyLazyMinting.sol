@@ -34,7 +34,6 @@ contract MyLazyMinting is ERC721URIStorage, EIP712, AccessControl {
     {
         ///@dev verify the signature and with NFT details to get the address of the signer(creator)
         address signer = verify(_NFTPackage, _signature);
-
         ///@dev This signer should have the minter Role , Otherwise revert
         require(
             hasRole(MINTER_ROLE, signer),
