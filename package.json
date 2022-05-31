@@ -1,5 +1,5 @@
 {
-  "name": "lazyMinting-SC",
+  "name": "lazy-minting-sc",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -19,10 +19,16 @@
   "homepage": "https://github.com/subhajitdas1999/lazyMinting-SC#readme",
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.6",
+    "@nomiclabs/hardhat-etherscan": "^3.0.3",
     "@nomiclabs/hardhat-waffle": "^2.0.3",
     "chai": "^4.3.6",
     "ethereum-waffle": "^3.4.4",
     "ethers": "^5.6.5",
     "hardhat": "^2.9.5"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.6.0",
+    "dotenv": "^16.0.1",
+    "ethers-eip712": "^0.2.0"
   }
 }
