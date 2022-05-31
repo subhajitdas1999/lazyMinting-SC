@@ -90,14 +90,16 @@ This event will emit after the successful execution if **purchaseNFT** function 
 
 Contracts deployed at Rinkeby network
 
-MyLazyMinting :- [0x58C54666c20059d61008978F56b015d6818b5680](https://rinkeby.etherscan.io/address/0x58C54666c20059d61008978F56b015d6818b5680#code)
+MyLazyMinting :- [0x1A87B7cb5A1Ae22Cd8C009ECFE31A3ef4826421d](https://rinkeby.etherscan.io/address/0x1A87B7cb5A1Ae22Cd8C009ECFE31A3ef4826421d#code)
 
 ***
 
 ## **Important Transaction Hash**
 
 
-claimNFT On Chain : [0x4052940a3cab34b3636f453bc882144902ec164073d4c78fc14eb4d9cd8f154c](https://rinkeby.etherscan.io/tx/0x4052940a3cab34b3636f453bc882144902ec164073d4c78fc14eb4d9cd8f154c)
+claimNFT On Chain : [0xbaef9dcfcb39a329e7fe1a44b4995fb5dd3d847ed392fbdbb75e862a7b645104](https://rinkeby.etherscan.io/tx/0xbaef9dcfcb39a329e7fe1a44b4995fb5dd3d847ed392fbdbb75e862a7b645104)
+
+On chain Purchase : [0xbc1e75494fd559effb83efcf55327ed9f1ce24b55643253e7a1a688d63aca6ba](https://rinkeby.etherscan.io/tx/0xbc1e75494fd559effb83efcf55327ed9f1ce24b55643253e7a1a688d63aca6ba)
 
 ***
 
